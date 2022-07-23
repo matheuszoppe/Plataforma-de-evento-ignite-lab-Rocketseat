@@ -4,6 +4,8 @@ import { gql, useMutation } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
+import imageBackground from '../assets/code-mockup.png'
+
 export function Subscribe() {
   const navigate = useNavigate();
 
@@ -71,7 +73,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img src="./src/assets/code-mockup.png" className="mt-10" alt="" />
+      <img src={imageBackground} className="mt-10" alt="" />
     </div>
   );
 }
